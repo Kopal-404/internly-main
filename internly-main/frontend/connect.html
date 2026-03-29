@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect - Internly</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    body {
+      background: #120e34;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cards-wrapper">
+
+  <div class="home-container2">
+    <span class="home-text1">Priya Sharma - Web Developer</span>
+    <button class="connect-btn">Connect</button>
+  </div>
+
+  <div class="home-container3">
+    <span class="home-text2">Rahul Kumar - Machine Learning</span>
+    <button class="connect-btn">Connect</button>
+  </div>
+
+  <div class="home-container4">
+    <span class="home-text3">Ananya Singh - UI/UX Designer</span>
+    <button class="connect-btn">Connect</button>
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("connect-btn")) {
+      e.target.innerText = "Requested";
+      e.target.disabled = true;
+    }
+  });
+</script>
+
+</body>
+</html>

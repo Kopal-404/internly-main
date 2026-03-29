@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Internly</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    body {
+      background: #f8fafc;
+      text-align: center;
+    }
+
+    .contact-box {
+      margin-top: 80px;
+    }
+
+    input, textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contact-box">
+  <h1>Contact Us</h1>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea placeholder="Your Message" required></textarea><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="successMsg" style="display:none; color:green;">
+    Message sent successfully!
+  </p>
+</div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page refresh
+
+    document.getElementById("successMsg").style.display = "block";
+  });
+</script>
+
+</body>
+</html>

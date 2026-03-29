@@ -1,0 +1,206 @@
+
+.home-container1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0F172A; 
+  background-image: url("public/gemini_generated_image_z1w37bz1w37bz1w3-1500h.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+
+.home-thq-navbar-elm {
+  width: 100%;
+  display: flex;
+  padding: 20px 50px;
+  z-index: 100;
+  position: relative;
+  align-items: center;
+ 
+  justify-content: center; 
+  background-color: transparent;
+}
+.home-thq-linkcontainer-elm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+
+  margin: 0 auto; 
+  padding-left: 150px; 
+}
+.home-link1, .home-link2, .home-link3, .home-navlink1 {
+  color: #F8FAFC !important; 
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.home-link1:hover, .home-link2:hover, .home-link3:hover, .home-navlink1:hover {
+  color: #22D3EE !important; 
+}
+
+.home-navlink2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6366f1 !important;
+  color: #FFFFFF !important;           
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 10px;                  
+}
+
+.home-navlink2:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.home-thq-text-elm2 {
+  color: #F8FAFC;
+  font-size: clamp(32px, 5vw, 64px); 
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.home-thq-text-elm1 {
+  color: #CBD5E1;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  width: 100%;
+  padding: 0 40px;
+  flex-wrap: wrap; 
+}
+
+
+.home-container2, .home-container3, .home-container4 {
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  background-image: radial-gradient(circle at top left, rgba(252, 0, 255, 0.4), rgba(0, 219, 222, 0.2));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-container2:hover, .home-container3:hover, .home-container4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(34, 211, 238, 0.3);
+  border-color: #22D3EE;
+}
+
+
+.home-text1, .home-text2, .home-text3 {
+  color: #F8FAFC;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.footer-section {
+  margin-top: auto;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-text4 {
+  color: #94A3B8;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home-card-link {
+  text-decoration: none; 
+  color: inherit;        
+  display: contents;     
+}
+
+
+.home-card-link:hover .home-container2,
+.home-card-link:hover .home-container3,
+.home-card-link:hover .home-container4 {
+  transform: translateY(-10px);             
+  box-shadow: 0px 10px 30px rgba(34, 211, 238, 0.4); 
+  filter: brightness(1.1);                   
+  cursor: pointer;                           
+}
+
+
+#google_translate_element {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+  font-family: Poppins, sans-serif;
+}
+
+
+.goog-te-combo {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;   
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.goog-te-combo:hover {
+  background: #334155;
+}
+
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+
+.goog-logo-link {
+  display: none !important;
+}
