@@ -126,5 +126,53 @@ function googleTranslateElementInit() {
 </script>
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div id="react-root"></div>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+
+function Navbar() {
+  return (
+    <div style={{background:"#1e293b", color:"white", padding:"10px"}}>
+      <a href="#">AI Bot</a> | 
+      <a href="#"> Connect</a> | 
+      <a href="#"> Matches</a>
+    </div>
+  );
+}
+
+function UserCard(props) {
+  return (
+    <div style={{border:"1px solid white", margin:"10px", padding:"10px"}}>
+      <h3>{props.name}</h3>
+      <p>{props.role}</p>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div style={{background:"#1e293b", color:"white", padding:"10px"}}>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <UserCard name="Priya Sharma" role="Web Developer" />
+      <UserCard name="Rahul Kumar" role="ML Engineer" />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("react-root")).render(<App />);
+
+</script>   
 </body>
 </html>
