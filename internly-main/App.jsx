@@ -1,16 +1,15 @@
-import Navbar from "./components/Navbar";
-import UserCard from "./components/UserCard";
-import Footer from "./components/Footer";
-
 function App() {
   return (
-    <div>
+    <div className="home-container1 app-container">
       <Navbar />
-      <UserCard name="Priya Sharma" role="Web Developer" />
-      <UserCard name="Rahul Kumar" role="ML Engineer" />
+
+      <div className="main-content">
+        <UserCard name="Priya Sharma" role="Web Developer" />
+        <UserCard name="Rahul Kumar" role="ML Engineer" />
+        <UserCard name="Ananya Singh" role="UI/UX Designer" />
+      </div>
+
       <Footer />
     </div>
   );
 }
-
-export default App;
